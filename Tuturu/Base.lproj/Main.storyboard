@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tuturu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zPP-eW-mN9">
+                                <rect key="frame" x="0.0" y="240" width="569" height="684"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5N-6b-Gfg">
+                                        <rect key="frame" x="21" y="8" width="322" height="350"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="350" id="qq8-GA-Q5I"/>
+                                        </constraints>
+                                        <state key="normal" image="tuturuImage"/>
+                                        <connections>
+                                            <action selector="tuturu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zjF-ZZ-tjg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="K5N-6b-Gfg" firstAttribute="top" secondItem="zPP-eW-mN9" secondAttribute="top" constant="8" id="m3W-Bm-ar3"/>
+                                    <constraint firstItem="K5N-6b-Gfg" firstAttribute="leading" secondItem="zPP-eW-mN9" secondAttribute="leading" constant="21" id="nbN-Af-HQu"/>
+                                    <constraint firstAttribute="trailing" secondItem="K5N-6b-Gfg" secondAttribute="trailing" constant="226" id="vI4-vY-mcY"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j6S-wU-mOe">
+                                <rect key="frame" x="16" y="181" width="343" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.57249838082901561" green="0.57249838082901561" blue="0.57249838082901561" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Press Mayuoshi !" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9J1-kV-8Wa">
+                                <rect key="frame" x="16" y="141" width="343" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.57249838082901561" green="0.57249838082901561" blue="0.57249838082901561" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zPP-eW-mN9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="194" id="AhK-Um-hhZ"/>
+                            <constraint firstItem="zPP-eW-mN9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="220" id="CjR-bY-WtK"/>
+                            <constraint firstItem="zPP-eW-mN9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SBQ-bY-VwR"/>
+                            <constraint firstItem="zPP-eW-mN9" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="257" id="kJg-ul-PCs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="countLabel" destination="j6S-wU-mOe" id="8Vy-3I-neo"/>
+                        <outlet property="nameLabel" destination="9J1-kV-8Wa" id="3ha-ZN-IKa"/>
+                        <outlet property="tuturuButton" destination="K5N-6b-Gfg" id="Tvq-Ry-nSs"/>
+                        <outlet property="underView" destination="zPP-eW-mN9" id="d7r-w1-KGT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tuturuImage" width="500" height="500"/>
+    </resources>
+</document>
